@@ -1,0 +1,40 @@
+[
+  {
+    "id": "sup-microtech",
+    "name": "МикроТех Монгол ХХК",
+    "categories": [
+      "cctv",
+      "drone_security"
+    ],
+    "country": "Монгол (импорт)",
+    "contact": "+976 7711-2233"
+  },
+  {
+    "id": "sup-tsakhilgaan",
+    "name": "Цахилгаан Импорт ХХК",
+    "categories": [
+      "electrical",
+      "cable"
+    ],
+    "country": "Солонгос/Хятад импорт",
+    "contact": "+976 7722-3344"
+  },
+  {
+    "id": "sup-gereltuulge",
+    "name": "Гэрэлтүүлэг Плюс ХХК",
+    "categories": [
+      "lighting"
+    ],
+    "country": "ЕХ/Солонгос импорт",
+    "contact": "+976 7733-4455"
+  },
+  {
+    "id": "sup-bekhelgee",
+    "name": "Монгол Бэхэлгээ ХХК",
+    "categories": [
+      "auxiliary"
+    ],
+    "country": "Хятад/Монгол",
+    "contact": "+976 7744-5566"
+  }
+]

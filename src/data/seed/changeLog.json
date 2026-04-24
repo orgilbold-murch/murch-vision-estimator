@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cl-altan-000",
+    "projectId": "prj-altan-body",
+    "itemId": "prj-altan-body-cctv-000-nvrбичлэгиинтөхөөрөмж48с",
+    "itemKind": "boq",
+    "sectionId": "cctv",
+    "field": "qty",
+    "before": 1,
+    "after": 1,
+    "deltaPct": 0,
+    "userId": "usr-b-narantuya",
+    "at": "2026-04-22T09:15:00.000Z",
+    "note": "NVR 48-суваг шаардлагатай"
+  },
+  {
+    "id": "cl-altan-p001",
+    "projectId": "prj-altan-body",
+    "itemId": "prj-altan-body-cctv-004-poeswitch4порт",
+    "itemKind": "boq",
+    "sectionId": "cctv",
+    "field": "unitPrice",
+    "before": 280000,
+    "after": 257600,
+    "deltaPct": -8,
+    "userId": "usr-b-narantuya",
+    "at": "2026-04-22T10:37:00.000Z",
+    "note": "Нийлүүлэгчтэй тохиролцож бууруулсан"
+  },
+  {
+    "id": "cl-altan-002",
+    "projectId": "prj-altan-body",
+    "itemId": "prj-altan-body-fire-002-утаамэдрэгч",
+    "itemKind": "boq",
+    "sectionId": "fire",
+    "field": "qty",
+    "before": 20,
+    "after": 24,
+    "deltaPct": 20,
+    "userId": "usr-b-narantuya",
+    "at": "2026-04-22T11:29:00.000Z",
+    "note": "Байрны тоог шинэчилсэн"
+  }
+]

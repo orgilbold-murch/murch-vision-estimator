@@ -1,0 +1,286 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-brand: #0041ff;
+  --color-brand-light: #4d7fff;
+
+  /* Section colors */
+  --color-section-cctv: #06b6d4;
+  --color-section-fire: #f97316;
+  --color-section-intercom: #a78bfa;
+  --color-section-electrical: #fbbf24;
+  --color-section-auxiliary: #10b981;
+
+  /* Fonts */
+  --font-display: "Unbounded", sans-serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  color-scheme: dark;
+  background: radial-gradient(ellipse at 20% 0%, #0a1a3e 0%, #050914 60%);
+  min-height: 100vh;
+  font-family: Manrope, system-ui, sans-serif;
+  color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Design token classes (ported from the v3 artifact GlobalStyles)
+   ────────────────────────────────────────────────────────────── */
+
+.font-display {
+  font-family: "Unbounded", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.font-mono-tab {
+  font-family: "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 65, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 65, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.grid-bg-fine {
+  background-image:
+    linear-gradient(rgba(77, 127, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 127, 255, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.blueprint-corner {
+  position: relative;
+}
+.blueprint-corner::before,
+.blueprint-corner::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: #0041ff;
+  opacity: 0.7;
+}
+.blueprint-corner::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+.blueprint-corner::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+
+.ticker {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Keyframes
+   ────────────────────────────────────────────────────────────── */
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-slide {
+  animation: fadeSlide 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide-up {
+  animation: slideUp 0.5s ease-out both;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.scanline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 65, 255, 0.15) 50%,
+    transparent 100%
+  );
+  animation: scan 2s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(0, 65, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 65, 255, 0.4);
+  }
+}
+.glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes ping-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+.ping-ring {
+  animation: ping-ring 1.5s ease-out infinite;
+}
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.count-up {
+  animation: count-up 0.3s ease-out;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+.dash-flow {
+  animation: dash 1s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(77, 127, 255, 0.2),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+  .print\:my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .print\:max-w-full {
+    max-width: 100% !important;
+  }
+}

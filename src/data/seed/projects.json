@@ -1,0 +1,131 @@
+[
+  {
+    "id": "prj-bross-c",
+    "organizationId": "org-murch",
+    "meta": {
+      "code": "ЗП-25-12-229",
+      "name": "Бросс-С блок",
+      "subtitle": "16 давхар, 75 айл",
+      "clients": "\"БРОСС КОНСАЛТИНГ\" ХХК · \"ХҮННҮЖИН-ЭНХ\" ХХК",
+      "location": "Улаанбаатар · Хан-Уул дүүрэг · 23 хороо",
+      "area": "~8,770 м²",
+      "pageCountHD": 14,
+      "pageCountHT": 30
+    },
+    "status": "draft",
+    "createdAt": "2026-04-15T09:00:00.000Z",
+    "updatedAt": "2026-04-15T09:00:00.000Z",
+    "createdBy": "usr-b-narantuya",
+    "settings": {
+      "tier": "standard",
+      "synergy": true,
+      "vatEnabled": true
+    },
+    "files": [
+      {
+        "name": "Бросс-С_блок-ХД_2026_04_07.pdf",
+        "size": "4.2 MB",
+        "pages": 14,
+        "type": "Холбоо-дохиолол"
+      },
+      {
+        "name": "Бросс-С_блок-ХТ_ДГ_2026_04_07.pdf",
+        "size": "12.8 MB",
+        "pages": 30,
+        "type": "Цахилгаан + Дотор гэрэлтүүлэг"
+      }
+    ],
+    "sectionOrder": [
+      "cctv",
+      "fire",
+      "intercom",
+      "electrical"
+    ]
+  },
+  {
+    "id": "prj-altan-body",
+    "organizationId": "org-murch",
+    "meta": {
+      "code": "ЗП-26-01-047",
+      "name": "Алтан бодь резиденс",
+      "subtitle": "12 давхар, 48 айл",
+      "clients": "\"АЛТАН БОДЬ ПРОПЕРТИЗ\" ХХК",
+      "location": "Улаанбаатар · Сүхбаатар дүүрэг · 1 хороо",
+      "area": "~5,200 м²",
+      "pageCountHD": 11,
+      "pageCountHT": 22
+    },
+    "status": "in_review",
+    "createdAt": "2026-04-21T10:30:00.000Z",
+    "updatedAt": "2026-04-22T14:15:00.000Z",
+    "createdBy": "usr-b-narantuya",
+    "settings": {
+      "tier": "premium",
+      "synergy": true,
+      "vatEnabled": true
+    },
+    "files": [
+      {
+        "name": "Алтан-бодь-ХД_2026_04_18.pdf",
+        "size": "3.4 MB",
+        "pages": 11,
+        "type": "Холбоо-дохиолол"
+      },
+      {
+        "name": "Алтан-бодь-ХТ_ДГ_2026_04_18.pdf",
+        "size": "9.8 MB",
+        "pages": 22,
+        "type": "Цахилгаан + Дотор гэрэлтүүлэг"
+      }
+    ],
+    "sectionOrder": [
+      "cctv",
+      "fire",
+      "intercom",
+      "electrical"
+    ]
+  },
+  {
+    "id": "prj-library",
+    "organizationId": "org-murch",
+    "meta": {
+      "code": "ЗП-26-02-012",
+      "name": "Үндэсний номын сан шинэчлэл",
+      "subtitle": "3 давхар, олон нийтийн барилга",
+      "clients": "\"НИЙСЛЭЛИЙН НОМЫН САНГИЙН ГАЗАР\"",
+      "location": "Улаанбаатар · Чингэлтэй дүүрэг · 5 хороо",
+      "area": "~2,800 м²",
+      "pageCountHD": 6,
+      "pageCountHT": 14
+    },
+    "status": "signed",
+    "createdAt": "2026-04-10T09:00:00.000Z",
+    "updatedAt": "2026-04-16T11:45:00.000Z",
+    "createdBy": "usr-b-narantuya",
+    "settings": {
+      "tier": "standard",
+      "synergy": false,
+      "vatEnabled": true
+    },
+    "files": [
+      {
+        "name": "Номын-сан-ХД_2026_04_05.pdf",
+        "size": "1.8 MB",
+        "pages": 6,
+        "type": "Холбоо-дохиолол"
+      },
+      {
+        "name": "Номын-сан-ХТ_ДГ_2026_04_05.pdf",
+        "size": "5.2 MB",
+        "pages": 14,
+        "type": "Цахилгаан + Дотор гэрэлтүүлэг"
+      }
+    ],
+    "sectionOrder": [
+      "cctv",
+      "fire",
+      "intercom",
+      "electrical"
+    ]
+  }
+]

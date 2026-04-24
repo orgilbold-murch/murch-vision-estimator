@@ -1,0 +1,25 @@
+[
+  {
+    "id": "usr-t-otgonbayar",
+    "organizationId": "org-murch",
+    "name": "Т.Отгонбаяр",
+    "role": "admin",
+    "title": "Үйл ажиллагааны захирал"
+  },
+  {
+    "id": "usr-ts-batbayar",
+    "organizationId": "org-murch",
+    "name": "Ц.Батбаяр",
+    "role": "engineer",
+    "licenseNumber": "2024-CE-0341",
+    "licenseExpires": "2028-03-15",
+    "title": "Ахлах инженер"
+  },
+  {
+    "id": "usr-b-narantuya",
+    "organizationId": "org-murch",
+    "name": "Б.Нарантуяа",
+    "role": "sales",
+    "title": "Борлуулалтын менежер"
+  }
+]
